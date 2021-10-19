@@ -1,0 +1,81 @@
+.grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+  /* height: 100vh; */
+  justify-items: center;
+  margin: 100px;
+  color: #E2E4E6;
+}
+
+.column {
+  /* grid-column: 2 / 3; */
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.column-2 {
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.p-column-title {
+  color: rgb(52, 73, 94);
+  font-size: large;
+  font-family: 'Rubik';
+}
+
+
+.header-table {
+  /* grid-column: 1 / 4; */
+  grid-row: 1/2;
+  text-align: center;
+  align-content: center;
+}
+
+.column-table {
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  background-color: var(--secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .02),
+    0 0 2px rgba(0, 0, 0, .05),
+    0 1px 4px rgba(0, 0, 0, .08) !important;
+}
+
+.card i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.p-inputtext {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.87);
+  background: var(--third);
+  padding: 0.5rem;
+  border: 1px solid rgb(48, 69, 98);
+  transition: background-color 0.2s ease 0s,
+    color 0.2s ease 0s,
+    border-color 0.2s ease 0s,
+    box-shadow 0.2s ease 0s;
+  appearance: none;
+  border-radius: 3px;
+}
